@@ -3,76 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PulsePost — Privacy Policy</title>
-<meta name="description" content="Privacy policy for PulsePost, the social media publishing tool operated by Nimbus Post Lab.">
+<title>PulsePost — Publishing OS</title>
+<meta name="description" content="PulsePost is Nimbus Post Lab's in-house tool for scheduling and publishing content to its own social media accounts.">
 <style>
-  :root { --bg:#ffffff; --fg:#1b1f24; --muted:#5b6470; --line:#e3e6ea; --accent:#3b6ef6; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#0d1117; --fg:#e6e9ee; --muted:#9aa4b1; --line:#262c35; --accent:#6f98ff; } }
+  :root { --bg:#ffffff; --fg:#1b1f24; --muted:#5b6470; --line:#e3e6ea; --accent:#3b6ef6; --card:#f6f8fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0d1117; --fg:#e6e9ee; --muted:#9aa4b1; --line:#262c35; --accent:#6f98ff; --card:#151b23; } }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:48px 20px 72px; }
-  h1 { font-size:2rem; line-height:1.2; margin:0 0 6px; }
-  h2 { font-size:1.15rem; margin:36px 0 8px; padding-top:18px; border-top:1px solid var(--line); }
-  p, li { color:var(--fg); }
-  .muted { color:var(--muted); }
-  ul { padding-left:1.2rem; }
+  main { max-width:760px; margin:0 auto; padding:56px 20px 72px; }
+  .eyebrow { font-size:.8rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0; }
+  h1 { font-size:2.2rem; line-height:1.15; margin:8px 0 12px; }
+  .lead { font-size:1.1rem; color:var(--muted); margin:0 0 32px; }
+  .grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .card h2 { font-size:1rem; margin:0 0 4px; }
+  .card p { margin:0; color:var(--muted); font-size:.95rem; }
   a { color:var(--accent); }
-  footer { margin-top:48px; font-size:.9rem; color:var(--muted); }
+  footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--line); font-size:.9rem; color:var(--muted); }
 </style>
 </head>
 <body>
 <main>
-  <h1>PulsePost Privacy Policy</h1>
-  <p class="muted">Operated by Nimbus Post Lab (InplexStudio) · Last updated 27 September 2026</p>
+  <p class="eyebrow">Nimbus Post Lab · InplexStudio</p>
+  <h1>PulsePost</h1>
+  <p class="lead">Our in-house publishing tool. We write a post once, tailor it for each platform, and schedule it
+  to our own business accounts on Pinterest, YouTube, Facebook, Instagram, Threads and Telegram.</p>
 
-  <p>PulsePost is a self-hosted publishing tool. We use it to schedule and publish content to social media
-  accounts that we own or manage — including Pinterest, YouTube, Facebook, Instagram, Threads and Telegram.
-  This policy explains what data PulsePost handles and why.</p>
+  <div class="grid">
+    <div class="card"><h2>Plan</h2><p>A content calendar for every post we publish.</p></div>
+    <div class="card"><h2>Tailor</h2><p>One main post, with per-platform captions and settings.</p></div>
+    <div class="card"><h2>Publish</h2><p>Scheduled through each platform's official API, with a status per account.</p></div>
+  </div>
 
-  <h2>Who uses PulsePost</h2>
-  <p>PulsePost is used only by our own team to manage our own business accounts. It is not offered to the
-  public, and it does not collect data from people who view our posts.</p>
+  <p style="margin-top:32px">PulsePost is used only by our own team and is not offered to the public.
+  Read how it handles data in our <a href="privacy/">privacy policy</a>.</p>
 
-  <h2>Data we access</h2>
-  <p>When an account is connected through the platform's official authorization screen, PulsePost receives
-  only what that screen grants, for example:</p>
-  <ul>
-    <li>Basic profile details of the connected account (name, username, profile picture).</li>
-    <li>The account's boards, pages or channels, so we can choose where a post goes.</li>
-    <li>Permission to create posts, Pins and videos on that account.</li>
-    <li>Performance numbers for our own posts (views, likes, saves), shown in our dashboard.</li>
-  </ul>
-  <p>PulsePost never asks for or stores social media passwords.</p>
-
-  <h2>How the data is used</h2>
-  <ul>
-    <li>To publish the content we create, at the time we schedule it.</li>
-    <li>To show whether each post published successfully, with a link to it.</li>
-    <li>To report how our own posts perform.</li>
-  </ul>
-  <p>We do not sell, rent or share this data with anyone, and we do not use it for advertising or profiling.</p>
-
-  <h2>Storage and security</h2>
-  <p>Data is stored on our own server. Access tokens are encrypted at rest and are only used to call the
-  platform's official API on our behalf. Access to the PulsePost console is protected by a private workspace token.</p>
-
-  <h2>Retention and deletion</h2>
-  <p>Access tokens are kept only while an account stays connected. Disconnecting an account in PulsePost
-  deletes its tokens. Access can also be revoked at any time from the platform's own settings — for Pinterest,
-  under <em>Settings → Security → Apps</em>.</p>
-
-  <h2>Third-party platforms</h2>
-  <p>Content published through PulsePost is subject to the terms and privacy policies of the platform it is
-  published on, such as <a href="https://policy.pinterest.com/privacy-policy">Pinterest's privacy policy</a>.</p>
-
-  <h2>Changes</h2>
-  <p>If this policy changes, the updated version will be published on this page with a new date.</p>
-
-  <h2>Contact</h2>
-  <p>Questions about this policy can be raised at
-  <a href="https://github.com/meetamirkhan-secure/pulsepost-privacy/issues">github.com/meetamirkhan-secure/pulsepost-privacy/issues</a>.</p>
-
-  <footer>© 2026 Nimbus Post Lab · PulsePost</footer>
+  <footer><a href="privacy/">Privacy policy</a> · © 2026 Nimbus Post Lab</footer>
 </main>
 </body>
 </html>
